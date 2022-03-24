@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var kobieta = findViewById<RadioButton>(R.id.RadioKobieta)
+        var mezczyzna = findViewById<RadioButton>(R.id.RadioMezczyzna)
         var wybranaPlec = ""
         if (kobieta.isChecked == true)
         {
@@ -28,26 +29,33 @@ class MainActivity : AppCompatActivity() {
 
         if (sport.isChecked == true)
         {
-            wybraneZainteresowania.plus("Sport ")
+            wybraneZainteresowania += ("Sport ")
         }
         if (muzyka.isChecked == true)
         {
-            wybraneZainteresowania.plus("Muzyka ")
+            wybraneZainteresowania += ("Muzyka ")
         }
         if (turystyka.isChecked == true)
         {
-            wybraneZainteresowania.plus("Turystyka ")
+            wybraneZainteresowania += ("Turystyka ")
         }
         if (gry.isChecked == true)
         {
-            wybraneZainteresowania.plus("Gry ")
+            wybraneZainteresowania += ("Gry ")
         }
 
-        var wiek = findViewById<EditText>(R.id.InputWiek).toString()
+        var wiek = findViewById<EditText>(R.id.inputWiek).text
 
         findViewById<Button>(R.id.ButtonZakoncz).setOnClickListener {
-            findViewById<Button>(R.id.ButtonZakoncz).isActivated = false
-            findViewById<TextView>(R.id.Wynik).text = wybranaPlec + " " + wiek + "lat" + wybraneZainteresowania
+            kobieta.isEnabled = false
+            mezczyzna.isEnabled = false
+            findViewById<EditText>(R.id.inputWiek).isEnabled == false
+            sport.isEnabled = false
+            muzyka.isEnabled = false
+            turystyka.isEnabled = false
+            gry.isEnabled = false
+
+            findViewById<TextView>(R.id.Wynik).text = wybranaPlec + " " + wiek.toString() + "lat" + " " + wybraneZainteresowania
          }
     }
 
