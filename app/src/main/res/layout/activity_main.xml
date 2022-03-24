@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/RadioKobieta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kobieta"
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.142" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/RadioMezczyzna"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mężczyzna"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.142" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/InputWiek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.255" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxSport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sport"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.509" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxMuzyka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Muzyka"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.509" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBoxTurystyka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Turystyka"
@@ -104,7 +104,7 @@
         app:layout_constraintVertical_bias="0.632" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBoxGry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gry"
@@ -126,5 +126,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.438" />
+
+    <Button
+        android:id="@+id/ButtonZakoncz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakończ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/Wynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
