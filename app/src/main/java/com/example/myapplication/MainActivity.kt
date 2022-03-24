@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var kobieta = findViewById<RadioButton>(R.id.RadioKobieta)
-        var mezczyzna = findViewById<RadioButton>(R.id.RadioMezczyzna)
         var wybranaPlec = ""
         if (kobieta.isChecked == true)
         {
@@ -44,10 +43,11 @@ class MainActivity : AppCompatActivity() {
             wybraneZainteresowania.plus("Gry ")
         }
 
-        var wiek = findViewById<>()
+        var wiek = findViewById<EditText>(R.id.InputWiek).toString()
 
         findViewById<Button>(R.id.ButtonZakoncz).setOnClickListener {
-            findViewById<TextView>(R.id.Wynik).text =
+            findViewById<Button>(R.id.ButtonZakoncz).isActivated = false
+            findViewById<TextView>(R.id.Wynik).text = wybranaPlec + " " + wiek + "lat" + wybraneZainteresowania
          }
     }
 
